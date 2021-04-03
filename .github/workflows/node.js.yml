@@ -48,10 +48,3 @@ jobs:
           BRANCH: gh-pages
           FOLDER: cypress/mochawesome-report
         
-        
-
-
-
-
-
-test, and deploy your project.

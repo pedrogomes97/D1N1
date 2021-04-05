@@ -36,6 +36,7 @@ jobs:
       - run: npm install
 
       - run: npm run cy:run
+        continue-on-error: true
       
       - run: npm run report:merge
       - run: npm run report:mocha
@@ -46,5 +47,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: cypress/mochawesome-report
+          FOLDER: mochawesome-report
         
